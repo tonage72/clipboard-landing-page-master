@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+body {
+	height: 100dvh;
+	width: 100%;
+}
+
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding: 7rem 2rem 2rem 2rem
+}
+
+/* main logo at top */
+main > img:first-child {
+	width: 45%;
+	padding-bottom: 4rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+	padding-top: 8rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	padding-top: 3rem;
+}
+
+p {
+	color: hsl(201, 11%, 66%);
+	padding-top: 1rem;
+}
+
+.dl-iOS,
+.dl-Mac {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3rem;
+	width: 100%;
+	border-radius: 2rem;
+	color: white;
+	font-weight: 600;
+}
+
+.dl-iOS {
+	background-color: hsl(171, 66%, 44%);
+	box-shadow: 0px 3px 0px rgb(58, 151, 108);
+	margin-top: 3rem;
+}
+
+.dl-Mac {
+	background-color: hsl(233, 100%, 69%);
+	margin: 1.5rem 0 0 0;
+	box-shadow: 0px 3px 0px rgb(100, 100, 197);
+}
+
+figure {
+	padding-top: 4rem;
+}
+
+.company-logos {
+	padding-top: 3rem;
+}
+
+.company-logos img {
+	padding-top: 5rem;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+ul li {
+	padding-top: 2rem;
+}
+
+footer {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin-top: 8rem;
+	width: 100%;
+	background-color: hsl(214, 33%, 96%);
+	padding: 3rem 0 3rem 0;
+}
+
+#logo-image img {
+	width: 50px;
+}
+
+.social-icons {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 50%;
+	justify-content: space-between;
+	padding-top: 3rem;
+}
+
+.social-icons img {
+	width: 30px;
+}
