@@ -20,6 +20,8 @@ img {
 body {
 	height: 100dvh;
 	width: 100%;
+	background-image: url("../images/bg-header-mobile.png");
+	background-repeat: no-repeat;
 }
 
 main {
