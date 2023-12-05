@@ -61,6 +61,13 @@ p {
 	max-width: 635px;
 }
 
+.dl-buttons {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+}
+
 .dl-iOS,
 .dl-Mac {
 	display: flex;
@@ -82,7 +89,7 @@ p {
 
 .dl-Mac {
 	background-color: hsl(233, 100%, 69%);
-	margin: 1.5rem 0 0 0;
+	margin-top: 1.5rem;
 	box-shadow: 0px 3px 0px rgb(100, 100, 197);
 }
 
@@ -90,15 +97,30 @@ figure {
 	padding-top: 4rem;
 }
 
+#icon-info-section {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+}
+
+#icon-info-section img {
+	width: 50px;
+}
+
 .large-image {
 	max-width: 750px;
 }
 
-.company-logos {
+#company-logos {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
 	padding-top: 3rem;
 }
 
-.company-logos img {
+#company-logos img {
 	padding-top: 5rem;
 }
 
@@ -196,5 +218,20 @@ footer {
 
 	.wrapper-computer-image p:nth-child(7) {
 		grid-area: complete-history-paragraph
+	}
+
+	.dl-buttons {
+		flex-flow: row nowrap;
+		justify-content: center;
+		column-gap: 1rem;
+	}
+
+	.dl-Mac {
+		margin-top: 3rem;
+	}
+
+	#company-logos {
+		flex-flow: row nowrap;
+		column-gap: 5rem;
 	}
 }
