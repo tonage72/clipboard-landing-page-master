@@ -112,6 +112,10 @@ figure {
 	max-width: 750px;
 }
 
+.wrapper-computer-image p {
+	margin: 0 auto;
+}
+
 #company-logos {
 	display: flex;
 	flex-flow: column nowrap;
@@ -160,23 +164,22 @@ footer {
 	width: 30px;
 }
 
-@media (min-width: 1055px) {
+@media (min-width: 1150px) {
 	body {
 		background-image: url("../images/bg-header-desktop.png");
 	}
 
 	main {
-		padding: 0;
+		padding: 7rem 0 0 0;
 	}
 
 	.wrapper-computer-image {
 		position: relative;
 		display: grid;
 		text-align: left;
-		align-items: top;
 		column-gap: 4rem;
-		grid-template-columns: max-content 25%;
-		grid-template-rows:  auto auto auto auto auto 1fr;
+		grid-template-columns: max-content 1fr;
+		grid-template-rows: auto auto auto auto auto 1fr;
 		grid-template-areas:
 			"image quick-search"
 			"image quick-search-paragraph"
@@ -186,6 +189,11 @@ footer {
 			"image complete-history-paragraph";
 		width: 100%;
 		margin-top: 4rem;
+	}
+
+	.wrapper-computer-image p {
+		margin: 0 15vw 0 0;
+		min-width: 165px;
 	}
 
 	.wrapper-computer-image figure {
@@ -213,11 +221,11 @@ footer {
 	}
 
 	.wrapper-computer-image h3:nth-child(6) {
-		grid-area: complete-history
+		grid-area: complete-history;
 	}
 
 	.wrapper-computer-image p:nth-child(7) {
-		grid-area: complete-history-paragraph
+		grid-area: complete-history-paragraph;
 	}
 
 	.dl-buttons {
@@ -233,5 +241,55 @@ footer {
 	#company-logos {
 		flex-flow: row nowrap;
 		column-gap: 5rem;
+	}
+
+	#icon-info-section {
+		display: grid;
+		width: 70%;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			"blacklisticon snippetsicon previewicon"
+			"blacklisttitle snippettitle previewtitle"
+			"blacklistparagraph snippetparagraph previewparagraph";
+	}
+
+	#icon-info-section figure:nth-child(1) {
+		grid-area: blacklisticon;
+		margin: 0 auto;
+	}
+
+	#icon-info-section figure:nth-child(4) {
+		grid-area: snippetsicon;
+		margin: 0 auto;
+	}
+
+	#icon-info-section figure:nth-child(7) {
+		grid-area: previewicon;
+		margin: 0 auto;
+	}
+
+	#icon-info-section h3:nth-child(2) {
+		grid-area: blacklisttitle;
+	}
+
+	#icon-info-section h3:nth-child(5) {
+		grid-area: snippettitle;
+	}
+
+	#icon-info-section h3:nth-child(8) {
+		grid-area: previewtitle;
+	}
+
+	#icon-info-section p:nth-child(3) {
+		grid-area: blacklistparagraph;
+	}
+
+	#icon-info-section p:nth-child(6) {
+		grid-area: snippetparagraph;
+	}
+
+	#icon-info-section p:nth-child(9) {
+		grid-area: previewparagraph;
 	}
 }
