@@ -292,4 +292,33 @@ footer {
 	#icon-info-section p:nth-child(9) {
 		grid-area: previewparagraph;
 	}
+
+	footer {
+		display: grid;
+		position: relative;
+		width: 100%;
+		grid-template-columns: 100px 400px 1fr;
+		grid-template-rows: 100px;
+		grid-template-areas: 
+			"logo ul social";
+	}
+
+	#logo-image {
+		grid-area: logo;
+	}
+
+	footer ul {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+		grid-area: ul;
+		height: 150px;
+		/* row-gap: 2rem; */
+	}
+
+	.social-icons {
+		grid-area: social;
+		margin-left: auto;
+	}
 }
