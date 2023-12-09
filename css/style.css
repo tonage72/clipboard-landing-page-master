@@ -295,16 +295,18 @@ footer {
 
 	footer {
 		display: grid;
-		position: relative;
 		width: 100%;
-		grid-template-columns: 100px 400px 1fr;
-		grid-template-rows: 100px;
+		grid-template-columns: 175px 1fr 1fr;
+		grid-template-rows: 110px;
 		grid-template-areas: 
 			"logo ul social";
+		padding: 2rem;
 	}
 
 	#logo-image {
 		grid-area: logo;
+		margin-left: auto;
+		padding-right: 4rem;
 	}
 
 	footer ul {
@@ -313,12 +315,21 @@ footer {
 		align-items: flex-start;
 		justify-content: flex-start;
 		grid-area: ul;
-		height: 150px;
-		/* row-gap: 2rem; */
+		height: 100%;
+	}
+
+	footer li {
+		padding: 0;
+		margin-top: 1.5rem;
 	}
 
 	.social-icons {
 		grid-area: social;
+		display: flex;
+		align-items: center;
+		justify-content: right;
 		margin-left: auto;
+		gap: 2rem;
+		padding: 0 25% 0 0;
 	}
 }
