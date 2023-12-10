@@ -17,6 +17,14 @@ img {
 	width: 100%;
 }
 
+a {
+	cursor: pointer;
+	text-decoration: none;
+	width: 100%;
+	max-width: 310px;
+	min-width: 150px;
+}
+
 body {
 	height: 100dvh;
 	width: 100%;
@@ -31,7 +39,9 @@ main {
 	align-items: center;
 	text-align: center;
 	width: 100%;
+	max-width: 1920px;
 	padding: 7rem 2rem 2rem 2rem;
+	margin: 0 auto;
 }
 
 /* main logo at top */
@@ -68,14 +78,13 @@ p {
 	width: 100%;
 }
 
-.dl-iOS,
-.dl-Mac {
+.dl-buttons .dl-iOS,
+.dl-buttons .dl-Mac {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 3rem;
 	width: 100%;
-	max-width: 310px;
 	border-radius: 2rem;
 	color: white;
 	font-weight: 600;
@@ -144,6 +153,8 @@ footer {
 	align-items: center;
 	margin-top: 8rem;
 	width: 100%;
+	max-width: 1920px;
+	margin: 7rem auto 0 auto;
 	background-color: hsl(214, 33%, 96%);
 	padding: 3rem 0 3rem 0;
 }
@@ -156,6 +167,8 @@ footer {
 	display: flex;
 	flex-flow: row nowrap;
 	width: 50%;
+	max-width: 245px;
+	min-width: 150px;
 	justify-content: space-between;
 	padding-top: 3rem;
 }
@@ -165,6 +178,7 @@ footer {
 }
 
 @media (min-width: 1150px) {
+
 	body {
 		background-image: url("../images/bg-header-desktop.png");
 	}
